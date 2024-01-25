@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/node
+#!/usr/bin/node
 // Make sure you have the "request" module installed. If you don't have it installed, you can install it using npm:
 
 // npm install request
