@@ -1,11 +1,14 @@
 #!/usr/bin/node
-const url = process.argv[2];
-const request = require('request');
+// Make sure you have the "request" module installed. If you don't have it installed, you can install it using npm:
 
-request(url, function (err, response, body) {
-  if (err) {
-    console.log(err);
-  } else {
-    console.log('code:', response.statusCode);
+// npm install request
+
+const request = require('request');
+const url = process.argv[2];
+
+request(url, (error, response, body) => {
+  if (error) {
+    console.log(error.message);
   }
+  console.log(`code: ${response.statusCode}`);
 });
