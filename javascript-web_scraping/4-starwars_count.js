@@ -8,13 +8,13 @@ request(url, (error, response, body) => {
   } else {
     const films = JSON.parse(body).results;
     let ct = 0;
-	for (const film of films) {
-		for (const character of film.characters) {
-			if (character.includes('18')) {
-				ct++
-			}
-		}
-	}
-	console.log(ct)
+    for (const film of films) {
+      for (const character of film.characters) {
+        if (character.includes('18')) {
+          ct++;
+        }
+      }
+    }
+    console.log(ct);
   }
 });
