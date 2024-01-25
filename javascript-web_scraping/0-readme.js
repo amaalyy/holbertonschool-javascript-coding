@@ -1,4 +1,4 @@
-#!/opt/homebrew/bin/node
+#!/usr/bin/node
 const f = require('fs');
 const argv = process.argv[2];
 
