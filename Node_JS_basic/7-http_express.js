@@ -18,7 +18,7 @@ app.get('/students', (req, res) => {
       res
         .status(500)
         .send(
-          `This is the list of our students\nCannot load the database\n${error.message}`
+          `This is the list of our students\nCannot load the database\n${error.message}`,
         );
     });
 });
